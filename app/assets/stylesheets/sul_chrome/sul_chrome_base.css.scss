@@ -53,18 +53,28 @@ a.img-link {
 }
 
 footer {
+	font-size: 90%;
 	text-align: center;
-	padding: 17px 0;
+	padding: 25px 0; 
 }
 footer img.footer-logo {
+	padding-bottom: 15px;
 	vertical-align: top;
 }
 footer a {
+	border-bottom: none; 
+	color:#575347;
 	margin-right: 10px;
 }
 footer #footer-links {
 	display: inline-block;
-	margin-left: 10px;
+	font-style: italic;
+	line-height: 1.5em;
+	margin-left: 20px;
+	text-align: left;
+}
+footer #footer-links a:hover{
+  border-bottom: none;
 }
 @mixin primary-button {
   background-color: #9D3225;
