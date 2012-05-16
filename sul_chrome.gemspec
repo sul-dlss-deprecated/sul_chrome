@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.name        = "sul_chrome"
   s.version     = SulChrome::VERSION
   s.authors     = ["Jessie Keck", "Gary Geisler"]
-  s.email       = ["jkec@stanford.edu", "geisler@stanford.edu"]
+  s.email       = ["jkeck@stanford.edu", "geisler@stanford.edu"]
   s.summary     = "Base chrome for Stanford University Libraries sites."
   s.description = "Sassified Twitter Bootstrap gem for Stanford University Libraries.  This gem provides some basic overrides to the some Bootstrap UI elements for the SUL unified UI design."
 
@@ -19,6 +19,6 @@ Gem::Specification.new do |s|
   s.add_dependency "compass_twitter_bootstrap"
   s.add_dependency "compass-rails"
   
-  s.add_development_dependency "lyberteam-devel"
+  s.add_development_dependency "lyberteam-gems-devel"
   s.add_development_dependency "sqlite3"
 end
