@@ -9,7 +9,6 @@ Gem::Specification.new do |s|
   s.version     = SulChrome::VERSION
   s.authors     = ["Jessie Keck", "Gary Geisler"]
   s.email       = ["jkec@stanford.edu", "geisler@stanford.edu"]
-  s.homepage    = "TODO"
   s.summary     = "Base chrome for Stanford University Libraries sites."
   s.description = "Sassified Twitter Bootstrap gem for Stanford University Libraries.  This gem provides some basic overrides to the some Bootstrap UI elements for the SUL unified UI design."
 
