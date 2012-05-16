@@ -1,0 +1,68 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "compass_twitter_bootstrap";
+@import "compass_twitter_bootstrap_responsive";
+
+body {
+	background: url("/assets/body.png") repeat scroll 0 0 transparent;
+	font-family: Lucida Grande,Verdana,Arial,sans-serif;
+	line-height: 1.5em;
+}
+a {
+	color: #575246;
+	text-decoration: none;
+	border-bottom: 1px dotted #84785A;
+}
+a:hover, a:active {
+	color: #6D1308;
+	border-bottom: 1px dotted #6D1308;
+	text-decoration: none;
+}
+a.img-link {
+	border-bottom: none;
+}
+.btn-primary {
+	background-color: #990000;
+}
+#sul-wrapper {
+	background: url("/assets/wrapper.png") repeat-x scroll 0 0 transparent;
+	text-align: center;
+	padding-top: 15px;
+}
+
+#container {
+	background: url("/assets/top-container.png") repeat-x scroll 0 0 #FFFFFF;
+  	border-radius: 3px 3px 3px 3px;
+  	border-top: 1px solid #FFFFFF;
+	margin: 0 auto;
+	padding: 10px 40px 40px;
+	// width: 960px;
+	text-align: left;
+	background-color: #FFFFFF;
+}
+#header {
+	margin-bottom: 20px;
+}
+#links {
+	float: right;
+}
+#header #links span {
+	color: #999999;
+}
+
+footer {
+	text-align: center;
+	padding: 17px 0;
+}
+footer img.footer-logo {
+	vertical-align: top;
+}
+footer a {
+	margin-right: 10px;
+}
+footer #footer-links {
+	display: inline-block;
+	margin-left: 10px;
+}
