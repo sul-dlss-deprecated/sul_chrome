@@ -38,8 +38,14 @@ class SulChromeGenerator < Rails::Generators::Base
 %q{// Required by SULChrome:
 //= require sul_chrome/sul_chrome_base
 }
-       end
-     end
+        end
+      end
+      unless IO.read("app/assets/javascripts/application.js").include?("//= require bootstrap-all")
+        insert_into_file "app/assets/javascripts/application.js", :after => "require sul_chrome/sul_chrome_base" do
+%q{
+//= require bootstrap-all}
+        end
+      end
     end
     
     # insert required dependencies into Gemfile
