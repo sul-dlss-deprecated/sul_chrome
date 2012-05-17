@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sul_chrome (0.0.1.pre1)
+    sul_chrome (0.0.1.pre3)
       compass-rails
       compass_twitter_bootstrap
       rails (>= 3.1.0)
@@ -111,10 +111,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass-rails
-  compass_twitter_bootstrap
   jquery-rails
   lyberteam-gems-devel
-  rails (>= 3.1.0)
   sqlite3
   sul_chrome!
