@@ -31,3 +31,16 @@
 		background-color: #9D3225 \9;
 	}
 }
+
+@mixin striped-table {
+	thead {
+		background-color: #DDDDDD;
+		border-top: 1px solid #CCCCCC;
+	}
+	tr.odd {
+		border-bottom: 1px solid #CCCCCC;
+	}
+	tr.even {
+		border-bottom: 1px solid #DDDDDD;
+	}
+}
