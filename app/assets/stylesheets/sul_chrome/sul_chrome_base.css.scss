@@ -77,3 +77,60 @@ footer #footer-links {
 footer #footer-links a:hover{
   border-bottom: none;
 }
+
+/* main navigation with CSS ribbon */
+$ribbon-offset-horizontal: 14px; // width of ribbon past main container
+$ribbon-offset-vertical: 8px; // height of shadow
+#navigation-ribbon {
+  @include border-top-radius(3px); 
+  padding: 0 5px 0 54px;
+  position: relative;
+  margin: 0 -54px 30px -54px;
+  text-shadow: 0 1px rgba(0,0,0,.8);
+  background: #651006;
+  background: url("/assets/bg-nav.png") repeat-x;
+  @include box-shadow(rgba(0,0,0,.3) 0 1px 0);
+  &:before, &:after { // ribbon edge styling
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-color: transparent;
+    bottom: -$ribbon-offset-vertical;
+  }
+  &:before {
+    border-width: 0 $ribbon-offset-horizontal $ribbon-offset-vertical 0;
+    border-right-color: #222;
+    left: 0;
+  }
+  &:after {
+    border-width: 0 0 $ribbon-offset-vertical $ribbon-offset-horizontal;
+    border-left-color: #222;
+    right: 0;
+  }
+  .navbar-inner {
+    background: none;
+    border-radius: 0;
+    min-height: 35px;
+    padding: 0;
+    .container {
+      height: 35px;
+      .nav {
+        float: left; // nav menu alignment
+        margin-right: 25px;
+        li {
+          margin-right: 5px;
+        }
+        a {
+          background-color: inherit;
+          border-bottom: none;
+          color: #FFF;
+          padding: 9px 18px 8px 0;
+          text-decoration: none;
+        }
+        a:hover, .active > a {
+          color: #CCC;
+        }
+      }
+    }
+  }
+}
