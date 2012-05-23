@@ -46,6 +46,17 @@ a.img-link {
 }
 #header {
 	margin-bottom: 12px;
+	#branding {
+		@media (max-width: 767px) {
+		  text-align:center;	
+		}		
+	}
+	#utility-links {
+		text-align: right;
+		@media (max-width: 767px) {
+		  text-align:center;	
+		}
+	}
 }
 #links {
 	float: right;
