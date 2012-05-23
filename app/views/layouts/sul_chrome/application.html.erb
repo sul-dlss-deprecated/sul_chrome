@@ -23,6 +23,16 @@
             </div>
           </div>
         </header>
+        <%- navigation = render :partial => "shared/sul_chrome/navigation" -%>
+        <%- unless navigation.blank? -%>
+          <nav id="navigation-ribbon" class="navbar">
+            <div class="navbar-inner">
+              <div class="container">
+                <%= render :partial => "shared/sul_chrome/navigation" %>
+              </div>
+            </div>
+          </nav>
+        <%- end -%>
         <%= render :partial => "shared/sul_chrome/main_container" %>
       </div>
     </div>
