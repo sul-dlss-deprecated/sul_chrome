@@ -25,6 +25,10 @@ a:hover, a:active {
 a.img-link {
 	border-bottom: none;
 }
+/* need to reset the bottom border on links styled as buttons  */
+a:hover.btn {
+	border-bottom:1px solid #CCCCCC;
+}
 .btn-primary {
 	background-color: #990000;
 }
