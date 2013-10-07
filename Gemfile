@@ -1,5 +1,5 @@
-source "http://rubygems.org"
-source "http://sulair-rails-dev.stanford.edu"
+source "https://rubygems.org"
+source "http://sul-gems.stanford.edu"
 
 # Declare your gem's dependencies in sul_chrome.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
