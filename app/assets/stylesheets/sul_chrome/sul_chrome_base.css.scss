@@ -1,11 +1,10 @@
-// Place all the styles related to the home controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+$baseFontSize: 13px;
+$baseLineHeight: 18px;
 
-@import "compass_twitter_bootstrap_awesome";
-@import "compass_twitter_bootstrap_responsive";
+@import 'bootstrap';
+@import 'bootstrap/responsive';
+
 @import "sul_chrome/sul_chrome_mixins";
-@import "compass/css3";
 
 body {
 	background: url("/assets/body.png") repeat scroll 0 0 transparent;

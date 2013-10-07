@@ -40,27 +40,6 @@ class SulChromeGenerator < Rails::Generators::Base
 }
         end
       end
-      unless IO.read("app/assets/javascripts/application.js").include?("//= require bootstrap-all")
-        insert_into_file "app/assets/javascripts/application.js", :after => "require sul_chrome/sul_chrome_base" do
-%q{
-//= require bootstrap-all}
-        end
-      end
-    end
-    
-    # insert required dependencies into Gemfile
-    def gemfile
-      g_file = IO.read("Gemfile")
-      unless g_file.include?("compass-rails")
-        insert_into_file "Gemfile", :after => /^.*sul_chrome.*$/ do
-          "\ngem 'compass-rails', :group => :assets\n"
-        end
-      end
-      unless g_file.include?("compass_twitter_bootstrap")
-        insert_into_file "Gemfile", :after => /^.*sul_chrome.*$/ do
-          "\ngem 'compass_twitter_bootstrap', :group => :assets \n"
-        end
-      end
     end
     
 end

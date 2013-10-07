@@ -16,8 +16,7 @@ Gem::Specification.new do |s|
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", ">= 3.1.0"
-  s.add_dependency "compass_twitter_bootstrap"
-  s.add_dependency "compass-rails"
+  s.add_dependency "bootstrap-sass"
   
   s.add_development_dependency "lyberteam-gems-devel"
   s.add_development_dependency "sqlite3"

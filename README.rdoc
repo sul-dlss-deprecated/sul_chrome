@@ -1,6 +1,6 @@
 = SULChrome
 
-The SUL Chrome gem provides some basic styles for a rails app under the Stanford University Libraries visual design.  This is based on a Sasified version of Twitter Bootstrap (https://github.com/vwall/compass-twitter-bootstrap).
+The SUL Chrome gem provides some basic styles for a rails app under the Stanford University Libraries visual design.
 
 The mixins that are defined by by the SUL Chrome gem are abstracted out into their own file, which is then included into the base_css.  You can use the mixins provided by importing the mixins file into your css:
 @import "sul_chrome/sul_chrome_mixins";
