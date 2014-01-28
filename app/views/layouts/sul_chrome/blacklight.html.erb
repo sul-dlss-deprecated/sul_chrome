@@ -9,7 +9,15 @@
   <%= content_for(:head) %> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body id="<%= "#{params[:controller]}-#{params[:action]}" %>">
+<body id="<%= render_body_class %>">
+
+  <div id="ajax-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal menu" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      </div>
+    </div>
+  </div>
+
   <div id="wrapper">
     <div id="sul-wrapper">
       <div id="container" class="container">
@@ -33,9 +41,25 @@
             </div>
           </nav>
         <%- end -%>
-        <%= render :partial => "shared/sul_chrome/main_container" %>
+
+        <%= render :partial => 'shared/header_navbar' %>
+        <div id="main-container">
+          <div class="row">
+            <div class="col-md-12">
+              <div id="main-flashes">
+                <%= render :partial=>'/flash_msg' %>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <%= render :partial => "shared/sul_chrome/main_container" %>
+          </div>
+        </div>
       </div>
     </div>
+
+    <%= render :partial => 'shared/footer' %>
     <footer>
       <%= image_tag("footer-stanford-logo.png", :class => "hidden-phone footer-logo") %>
       <div id="footer-links">
